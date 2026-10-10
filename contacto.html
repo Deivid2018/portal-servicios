@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Portal Servicios</title>
+  <meta name="description" content="Formulario de contacto para solicitar servicios." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">Portal <span>Servicios</span></a>
+      <nav class="nav-links" aria-label="Menú principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="servicios.html" class="btn btn-primary">Ver servicios</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container small-container">
+        <span class="eyebrow">📞 Contacto</span>
+        <h1>Solicita una llamada de vuelta</h1>
+        <p>Completa el formulario y nos pondremos en contacto contigo para ayudarte a elegir la mejor solución.</p>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="container contact-wrap contact-page">
+        <aside class="contact-card">
+          <h3>Información de contacto</h3>
+          <p>Estamos listos para responder tus dudas y asesorarte.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">☎</span>
+              <div>
+                <strong>Teléfono</strong><br />
+                <a href="tel:+541155551234">+54 11 5555-1234</a>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">✉</span>
+              <div>
+                <strong>Email</strong><br />
+                <a href="mailto:contacto@portalservicios.com">contacto@portalservicios.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Ubicación</strong><br />
+                Av. Principal 123, Buenos Aires, Argentina
+              </div>
+            </li>
+          </ul>
+
+          <div class="hours">
+            <h4>Horarios de atención</h4>
+            <p>Lunes a viernes: 09:00 - 18:00<br />
+            Sábado: 10:00 - 14:00</p>
+          </div>
+        </aside>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nombre">Nombre completo *</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            </div>
+
+            <div class="field">
+              <label for="empresa">Empresa</label>
+              <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+            </div>
+
+            <div class="field">
+              <label for="telefono">Teléfono *</label>
+              <input id="telefono" name="telefono" type="tel" placeholder="+54 11 0000-0000" required />
+            </div>
+
+            <div class="field full">
+              <label for="servicio">¿Qué servicio te interesa? *</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Consultoría Empresarial</option>
+                <option>Marketing Digital</option>
+                <option>Diseño y Branding</option>
+                <option>Soporte Técnico</option>
+                <option>Análisis de Datos</option>
+                <option>Transformación Digital</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas y cómo podemos ayudarte..." required></textarea>
+            </div>
+
+            <div class="field full">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terminos" name="terminos" required />
+                Acepto la política de privacidad y términos de servicio
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <p class="form-note">Te responderemos en máximo 24 horas</p>
+          </div>
+
+          <div id="successMessage" class="success-msg">
+            ✓ ¡Gracias! Tu solicitud fue enviada correctamente. Nos pondremos en contacto contigo pronto.
+          </div>
+
+          <div id="errorMessage" class="error-msg">
+            ✗ Por favor completa todos los campos obligatorios.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Portal Servicios</h4>
+        <p>Soluciones profesionales para tu negocio.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de servicio</a></li>
+          <li><a href="#">Aviso legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Redes sociales</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Portal Servicios. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
